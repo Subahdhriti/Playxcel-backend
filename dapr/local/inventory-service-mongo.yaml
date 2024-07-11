@@ -1,0 +1,37 @@
+#apiVersion: dapr.io/v1alpha1
+#kind: Component
+#metadata:
+#  name: inventory-service-mongo
+#spec:
+#  type: state.mongodb
+#  version: v1
+#  metadata:
+#    - name: connectionURIFormatWithSrvAndCredentials
+#      value: "mongodb+srv://playxceluser:s2240l@cluster0.mongodb.net/?retryWrites=true&w=majority"
+##    - name: username
+##      value: "playxceluser"
+##    - name: password
+##      value: "s2240l"
+#    - name: databaseName
+#      value: "playxcel_inventory"
+#    - name: collectionName
+#      value: "inventory_collection"
+
+#apiVersion: dapr.io/v1alpha1
+#kind: Component
+#metadata:
+#  name: app-rating-mongo
+#spec:
+#  type: state.mongodb
+#  version: v1
+#  metadata:
+#    - name: server
+#      value: "mdb-tddev-de-ci-nec-01-pl-0.vyj1r.mongodb.net"
+#    - name: username
+#      value: "necappuser"
+#    - name: password
+#      value: "appuser123"
+#    - name: databaseName
+#      value: "neu_core_mongo"
+#    - name: collectionName
+#      value: "app_rating_test"
