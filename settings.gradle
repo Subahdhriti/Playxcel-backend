@@ -1,0 +1,6 @@
+rootProject.name = 'playxcel_backend'
+
+
+include 'library:common'
+include 'service:inventory-service'
+
