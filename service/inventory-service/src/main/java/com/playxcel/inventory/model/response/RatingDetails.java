@@ -7,5 +7,5 @@ import lombok.Setter;
 @Setter
 public class RatingDetails {
     private Double average;
-    private Long count;
+    private Integer count;
 }
