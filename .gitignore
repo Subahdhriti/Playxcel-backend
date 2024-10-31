@@ -5,7 +5,7 @@ build/
 !library/common/src/main/**/build/
 !library/common/src/test/**/build/
 
-service/**/build
+service/**/build/
 
 ### STS ###
 .apt_generated
