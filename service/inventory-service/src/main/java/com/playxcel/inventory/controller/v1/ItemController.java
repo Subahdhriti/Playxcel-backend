@@ -22,7 +22,7 @@ public class ItemController {
         return inventoryService.getItemDetails(payload.getItemId());
     }
 
-    @PostMapping("/item-list")
+    @PostMapping("/list-item")
     public ItemList getItemList(@Valid @RequestBody ItemListPayload payload, @RequestHeader String customerHash){
         return inventoryService.getItemList(payload);
     }
