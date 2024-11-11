@@ -17,6 +17,11 @@ public class ItemController {
     @Autowired
     private InventoryService inventoryService;
 
+    @GetMapping("/health")
+    public ApiResponse getHealth(){
+        return new ApiResponse(200,"Healthy");
+    }
+
     @PostMapping("/item-details")
     public Item getItemDetails(@Valid @RequestBody ItemDetailsPayload payload, @RequestHeader String customerHash){
         return inventoryService.getItemDetails(payload.getItemId());
